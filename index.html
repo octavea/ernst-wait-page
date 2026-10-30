@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Hadrian</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%22-12.5%203.2%20224.9%20224.9%22%20width%3D%22600%22%20height%3D%22600%22%3E%3Ccircle%20cx%3D%22100.0%22%20cy%3D%22115.7%22%20r%3D%22112.5%22%20fill%3D%22%23111111%22/%3E%3Cg%20transform%3D%22translate%28100.0%20115.7%29%20scale%280.86%29%20translate%28-100.0%20-115.7%29%22%3E%3Cpath%20d%3D%22M100.00%2036.00C120.00%2034.00%20140.00%2036.00%20148.00%2048.00C154.00%2058.00%20153.00%2078.00%20147.00%2094.00C156.00%20112.00%20153.00%20156.00%20136.00%20180.00C134.07%20182.32%20131.98%20184.34%20129.79%20186.09Q141.62%20173.51%20145.95%20152.72Q150.71%20129.90%20145.07%20105.75Q144.82%20104.68%20143.75%20104.93Q142.68%20105.18%20142.93%20106.25Q148.45%20129.93%20143.80%20152.28Q138.75%20176.51%20123.30%20189.15Q122.88%20189.50%20122.84%20189.88Q122.81%20190.19%20123.02%20190.53C115.52%20194.49%20107.38%20196.00%20100.00%20196.00C92.62%20196.00%2084.48%20194.49%2076.98%20190.53Q77.19%20190.19%2077.16%20189.88Q77.12%20189.50%2076.70%20189.15Q61.25%20176.51%2056.20%20152.28Q51.55%20129.93%2057.07%20106.25Q57.32%20105.18%2056.25%20104.93Q55.71%20104.80%2055.38%20105.01Q55.05%20105.21%2054.93%20105.75Q49.29%20129.90%2054.05%20152.72Q58.38%20173.51%2070.21%20186.09C68.02%20184.34%2065.93%20182.32%2064.00%20180.00C47.00%20156.00%2044.00%20112.00%2053.00%2094.00C47.00%2078.00%2046.00%2058.00%2052.00%2048.00C60.00%2036.00%2080.00%2034.00%20100.00%2036.00ZM134.50%2086.00C134.50%2083.01%20133.53%2080.24%20131.88%2078.00L110.12%2078.00C108.47%2080.24%20107.50%2083.01%20107.50%2086.00C107.50%2093.46%20113.54%2099.50%20121.00%2099.50C128.46%2099.50%20134.50%2093.46%20134.50%2086.00ZM92.50%2086.00C92.50%2083.01%2091.53%2080.24%2089.88%2078.00L68.12%2078.00C66.47%2080.24%2065.50%2083.01%2065.50%2086.00C65.50%2093.46%2071.54%2099.50%2079.00%2099.50C86.46%2099.50%2092.50%2093.46%2092.50%2086.00ZM86.50%2087.00C86.50%2091.42%2082.92%2095.00%2078.50%2095.00C74.08%2095.00%2070.50%2091.42%2070.50%2087.00C70.50%2082.58%2074.08%2079.00%2078.50%2079.00C82.92%2079.00%2086.50%2082.58%2086.50%2087.00ZM129.50%2087.00C129.50%2091.42%20125.92%2095.00%20121.50%2095.00C117.08%2095.00%20113.50%2091.42%20113.50%2087.00C113.50%2082.58%20117.08%2079.00%20121.50%2079.00C125.92%2079.00%20129.50%2082.58%20129.50%2087.00ZM97.97%2072.80Q99.26%2072.83%2099.30%2071.53Q99.33%2070.24%2098.03%2070.20L60.81%2069.20Q60.16%2069.18%2059.83%2069.50Q59.49%2069.82%2059.48%2070.47Q59.44%2071.76%2060.74%2071.80ZM101.97%2070.20Q100.67%2070.24%20100.70%2071.53Q100.74%2072.83%20102.03%2072.80L139.26%2071.80Q140.56%2071.76%20140.52%2070.47Q140.49%2069.17%20139.19%2069.20ZM100.00%2084.00L95.80%2094.00L100.00%20104.00L104.20%2094.00ZM77.90%2084.50C77.90%2083.56%2077.14%2082.80%2076.20%2082.80C75.26%2082.80%2074.50%2083.56%2074.50%2084.50C74.50%2085.44%2075.26%2086.20%2076.20%2086.20C77.14%2086.20%2077.90%2085.44%2077.90%2084.50ZM125.50%2084.50C125.50%2083.56%20124.74%2082.80%20123.80%2082.80C122.86%2082.80%20122.10%2083.56%20122.10%2084.50C122.10%2085.44%20122.86%2086.20%20123.80%2086.20C124.74%2086.20%20125.50%2085.44%20125.50%2084.50Z%22%20fill%3D%22%23FFFFFF%22/%3E%3C/g%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #000000;
+    --ink: #F5F5F7;
+    --muted: #A1A1A6;
+    --faint: #6E6E73;
+    --line: rgba(255, 255, 255, 0.10);
+    --nav: rgba(22, 22, 23, 0.72);
+    --accent: #2997FF;
+    --accent-ink: #000000;
+    --card: rgba(255, 255, 255, 0.04);
+    --max: 1100px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Segoe UI", Inter, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  /* ---------- Navigation globale ---------- */
+  .gnav {
+    --fh: 0px;                                   /* hauteur du panneau déroulé */
+    --ease: cubic-bezier(0.4, 0, 0.6, 1);
+    --fly-ink: #E8E8ED;
+    --fly-muted: #86868B;
+    position: fixed; inset: 0 0 auto 0; z-index: 20; height: 44px;
+  }
+  .gnav-bg {
+    position: absolute; inset: 0 0 auto 0;
+    height: calc(44px + var(--fh));
+    background: rgba(22, 22, 23, 0.72);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid var(--line);
+    transition: height .32s var(--ease), background-color .32s var(--ease);
+  }
+  .gnav.is-open .gnav-bg { background: rgba(22, 22, 23, 0.98); }
+  .gnav.is-mobile-open .gnav-bg { background: #161617; }
+  .gnav-bar {
+    position: relative; max-width: 1024px; height: 44px; margin: 0 auto; padding: 0 22px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand { display: flex; align-items: center; gap: 9px; color: var(--ink); height: 44px; transition: opacity .24s var(--ease); }
+  .brand-lockup { height: 20px; width: auto; display: block; }
+
+  .gnav-list { display: flex; align-items: center; height: 100%; list-style: none; margin: 0; padding: 0; }
+  .gnav-item { position: relative; display: flex; align-items: center; height: 100%; }
+  .gnav-link {
+    display: flex; align-items: center; height: 100%; padding: 0 15px;
+    font-size: 12px; letter-spacing: -0.01em; color: rgba(232, 232, 237, 0.8);
+    transition: color .32s var(--ease);
+  }
+  .gnav-link:hover, .gnav-item.is-current .gnav-link { color: #FFFFFF; }
+  /* bouton d'ouverture au clavier : invisible à la souris, apparaît au focus (comme chez Apple) */
+  .gnav-chev {
+    position: absolute; right: 1px; top: 50%; width: 14px; height: 14px; margin-top: -7px; padding: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: none; border: 0; border-radius: 3px; color: var(--fly-ink); cursor: pointer; opacity: 0;
+  }
+  .gnav-chev svg { width: 8px; height: 8px; transition: transform .32s var(--ease); }
+  .gnav-chev:focus-visible { opacity: 1; outline: 2px solid var(--accent); outline-offset: 1px; }
+  .gnav-chev[aria-expanded="true"] svg { transform: rotate(180deg); }
+
+  .gnav-tools { display: flex; align-items: center; gap: 6px; height: 100%; }
+  .gnav-icon {
+    width: 40px; height: 44px; display: flex; align-items: center; justify-content: center;
+    background: none; border: 0; padding: 0; color: rgba(232, 232, 237, 0.8); cursor: pointer;
+    transition: color .32s var(--ease);
+  }
+  .gnav-icon:hover, .gnav-icon[aria-expanded="true"] { color: #FFFFFF; }
+  .gnav-icon svg { width: 15px; height: 15px; }
+  .gnav-cta {
+    margin-left: 8px; font-size: 12px; font-weight: 500; padding: 4px 12px; border-radius: 980px;
+    background: var(--ink); color: #000; white-space: nowrap; transition: background .2s;
+  }
+  .gnav-cta:hover { background: #FFFFFF; }
+  .gnav a:focus-visible, .gnav-icon:focus-visible, .gnav-burger:focus-visible, .gnav-back:focus-visible, .m-link:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px;
+  }
+
+  /* panneau déroulant (ordinateur) */
+  .gnav-flyout {
+    position: absolute; top: 44px; left: 0; right: 0; height: var(--fh); overflow: hidden;
+    transition: height .32s var(--ease);
+  }
+  .gnav-menu { position: absolute; top: 0; left: 0; right: 0; visibility: hidden; transition: visibility 0s .24s; }
+  .gnav-menu.is-active { visibility: visible; transition-delay: 0s; }
+  .gnav-menu-inner {
+    max-width: 1024px; margin: 0 auto; padding: 40px 22px 84px;
+    display: grid; grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr)); gap: 0 44px;
+  }
+  .gnav-col h2 { margin: 0 0 14px; font-size: 12px; font-weight: 400; letter-spacing: -0.01em; color: var(--fly-muted); }
+  .gnav-col ul { list-style: none; margin: 0; padding: 0; }
+  .gnav-col a {
+    display: inline-block; padding: 4px 0; font-size: 12px; font-weight: 600; letter-spacing: -0.01em;
+    color: var(--fly-ink); transition: color .2s;
+  }
+  .gnav-col.is-big a { font-size: 24px; line-height: 1.17; letter-spacing: 0.009em; padding: 4px 0 5px; }
+  .gnav-col a:hover { color: #FFFFFF; }
+  /* apparition échelonnée des éléments */
+  .stg { opacity: 0; transform: translateY(-4px); transition: opacity .1s linear, transform .1s linear; }
+  .is-active > * .stg, .is-active .stg {
+    opacity: 1; transform: none;
+    transition: opacity .24s var(--ease) var(--d, 0ms), transform .24s var(--ease) var(--d, 0ms);
+  }
+
+  /* recherche */
+  .gnav-search-inner { max-width: 1024px; margin: 0 auto; padding: 38px 22px 76px; }
+  .gnav-search-field { display: flex; align-items: center; gap: 12px; color: var(--fly-muted); }
+  .gnav-search-field svg { width: 22px; height: 22px; flex: none; }
+  .gnav-search-field input {
+    flex: 1; min-width: 0; background: none; border: 0; outline: none; padding: 4px 0;
+    font-family: inherit; font-size: 24px; font-weight: 600; line-height: 1.2; letter-spacing: 0.009em; color: var(--fly-ink);
+  }
+  .gnav-search-field input::placeholder { color: var(--fly-muted); }
+  .gnav-search-field input::-webkit-search-cancel-button, .gnav-search-field input::-webkit-search-decoration { -webkit-appearance: none; appearance: none; }
+  .gnav-quick { margin-top: 36px; }
+  .gnav-quick a { display: inline-flex; align-items: center; gap: 10px; }
+  .gnav-quick a svg { width: 10px; height: 10px; color: var(--fly-muted); }
+
+  /* voile flouté sur la page */
+  .gnav-curtain {
+    position: fixed; inset: 0; z-index: 19; background: rgba(0, 0, 0, 0.42);
+    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    opacity: 0; visibility: hidden; transition: opacity .32s var(--ease), visibility 0s .32s;
+  }
+  .gnav-curtain.is-visible { opacity: 1; visibility: visible; transition-delay: 0s; }
+
+  /* mobile */
+  .gnav-burger, .gnav-back { display: none; }
+  .gnav-burger {
+    position: relative; width: 44px; height: 44px; margin-right: -12px; padding: 0;
+    background: none; border: 0; cursor: pointer;
+  }
+  .gnav-burger span {
+    position: absolute; left: 14px; top: 21px; width: 16px; height: 1.4px; border-radius: 1px; background: var(--fly-ink);
+    transition: transform .32s var(--ease);
+  }
+  .gnav-burger span:first-child { transform: translateY(-3.5px); }
+  .gnav-burger span:last-child { transform: translateY(3.5px); }
+  .gnav.is-mobile-open .gnav-burger span:first-child { transform: rotate(45deg); }
+  .gnav.is-mobile-open .gnav-burger span:last-child { transform: rotate(-45deg); }
+  .gnav-back {
+    position: absolute; left: 10px; top: 0; width: 44px; height: 44px; padding: 0;
+    align-items: center; justify-content: center; background: none; border: 0; color: var(--fly-ink); cursor: pointer;
+    opacity: 0; visibility: hidden; transition: opacity .24s var(--ease), visibility 0s .24s;
+  }
+  .gnav-back svg { width: 9px; height: 15px; }
+  .gnav.is-sub .gnav-back { opacity: 1; visibility: visible; transition-delay: 0s; }
+  .gnav.is-sub .brand { opacity: 0; pointer-events: none; }
+  .gnav-mobile {
+    display: none; position: fixed; top: 44px; left: 0; right: 0; bottom: 0; overflow: hidden;
+    visibility: hidden; transition: visibility 0s .32s;
+  }
+  .gnav.is-mobile-open .gnav-mobile { visibility: visible; transition-delay: 0s; }
+  .m-level {
+    position: absolute; inset: 0; overflow-y: auto; padding: 20px 48px 48px;
+    visibility: hidden; transition: transform .32s var(--ease), visibility 0s .32s;
+  }
+  .m-level.is-active { visibility: visible; transition-delay: 0s; }
+  .m-level.is-left { transform: translateX(-28px); }
+  .m-level.is-right { transform: translateX(28px); }
+  .m-level ul { list-style: none; margin: 0; padding: 0; }
+  .m-link {
+    display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 6px 0;
+    background: none; border: 0; text-align: left; cursor: pointer;
+    font-family: inherit; font-size: 28px; font-weight: 600; line-height: 1.14; letter-spacing: 0.007em; color: var(--fly-ink);
+  }
+  .m-link svg { width: 9px; height: 15px; color: var(--fly-muted); }
+  .m-cta { display: inline-flex; margin-top: 28px; padding: 10px 18px; border-radius: 980px; background: var(--ink); color: #000; font-size: 15px; font-weight: 500; }
+  .m-col { margin-bottom: 28px; }
+  .m-col h2 { margin: 0 0 10px; font-size: 17px; font-weight: 400; color: var(--fly-muted); }
+  .m-col a { display: block; padding: 4px 0; font-size: 17px; font-weight: 600; color: var(--fly-ink); }
+  .m-col.is-big a { font-size: 28px; line-height: 1.14; letter-spacing: 0.007em; padding: 5px 0; }
+  .m-level .gnav-search-field input { font-size: 22px; }
+  @media (max-width: 833px) {
+    .gnav-list, .gnav-cta, .gnav-flyout, .gnav-curtain { display: none; }
+    .gnav-burger, .gnav-back { display: flex; }
+    .gnav-mobile { display: block; }
+  }
+  @media (max-width: 480px) {
+    .m-level { padding: 16px 32px 40px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .gnav *, .gnav-bg, .gnav-curtain { transition-duration: 0s !important; transition-delay: 0s !important; }
+  }
+  .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+  /* ---------- Fond animé ---------- */
+  /* la carte appartient au héro : elle défile avec lui */
+  #waves { position: absolute; top: 0; left: 0; width: 100%; height: var(--hero-h, 100vh); z-index: 0; pointer-events: none; }
+  .veil {
+    position: absolute; top: 0; left: 0; width: 100%; height: var(--hero-h, 100vh); z-index: 1; pointer-events: none;
+    background:
+      radial-gradient(ellipse 50% 40% at 50% 42%, rgba(0,0,0,0.55) 0%, transparent 100%),
+      radial-gradient(ellipse 100% 80% at 50% 50%, transparent 40%, rgba(0,0,0,0.75) 100%);
+  }
+  main, footer { position: relative; z-index: 2; }
+
+  /* ---------- Héro ---------- */
+  .hero {
+    min-height: 100vh; padding: 140px 22px 96px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  }
+  .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 18px; }
+  h1 {
+    margin: 0; max-width: 860px;
+    font-size: clamp(40px, 7vw, 80px); line-height: 1.04; letter-spacing: -0.035em; font-weight: 700;
+  }
+  .lead { margin: 22px 0 0; max-width: 620px; font-size: clamp(17px, 2vw, 21px); color: var(--muted); }
+  .actions { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    min-height: 44px; padding: 0 22px; border-radius: 980px; font-size: 16px; font-weight: 500;
+    transition: transform .2s, background .2s, color .2s;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-ghost { border: 1px solid rgba(255,255,255,0.28); color: var(--ink); }
+  .btn-ghost:hover { background: rgba(255,255,255,0.08); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  /* ---------- Atouts ---------- */
+  .section { max-width: var(--max); margin: 0 auto; padding: 40px 22px 120px; }
+  .section h2 { margin: 0 0 40px; font-size: clamp(28px, 4vw, 44px); letter-spacing: -0.025em; line-height: 1.1; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .card {
+    padding: 32px 28px; border-radius: 22px; background: var(--card);
+    border: 1px solid var(--line); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  }
+  .card .num { font-size: 13px; color: var(--faint); font-variant-numeric: tabular-nums; }
+  .card h3 { margin: 10px 0 8px; font-size: 21px; letter-spacing: -0.015em; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  /* ---------- Pied de page ---------- */
+  footer { border-top: 1px solid var(--line); }
+  .footer-inner {
+    max-width: var(--max); margin: 0 auto; padding: 22px; display: flex; flex-wrap: wrap; gap: 12px 24px;
+    justify-content: space-between; font-size: 12px; color: var(--faint);
+  }
+  .footer-inner nav { display: flex; gap: 20px; }
+  .footer-inner a:hover { color: var(--ink); }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 760px) {
+    .grid { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .btn { transition: none; }
+  }
+  /* ---------- Hadrian, la chouette ---------- */
+  .owl { position: absolute; --owl-ink: #F5F5F7; --owl-bg: #000000; }
+  .owl svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .owl-fill { fill: var(--owl-ink); }
+  .owl-pupil .p { fill: var(--owl-ink); }
+  .owl-pupil .h { fill: var(--owl-bg); }
+  .owl-lid { fill: var(--owl-ink); transform-box: fill-box; transform-origin: 50% 0; transform: scaleY(0); transition: transform .1s ease-in; }
+  .owl-lid.is-closed { transform: scaleY(1); transition: transform .07s ease-out; }
+  .owl-hop { transition: transform .5s cubic-bezier(.34, 1.56, .64, 1); }
+  .owl:hover .owl-hop { transform: translateY(-6px); }
+  /* perchée sur le bord d'une carte : elle surgit de derrière au premier passage */
+  .card-perch { position: relative; }
+  .perch { position: absolute; left: 14px; bottom: 100%; width: 84px; height: 116px; margin-bottom: -3px; overflow: hidden; pointer-events: none; }
+  .perch .owl { left: 12px; right: 12px; bottom: 0; pointer-events: auto; transform: translateY(105%); transition: transform .9s cubic-bezier(.22, 1, .36, 1); }
+  .perch.is-in .owl { transform: none; }
+  /* section de clôture */
+  .closing { position: relative; z-index: 2; padding: 150px 22px 140px; text-align: center; }
+  .closing-inner { max-width: 720px; margin: 0 auto; }
+  .branch { position: relative; width: min(600px, 100%); aspect-ratio: 10 / 1; margin: 0 auto 36px; }
+  .branch > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .branch > svg path { fill: none; stroke-linecap: round; }
+  .branch .owl { left: 50%; bottom: calc(63.33% - 5px); width: 92px; margin-left: -46px; opacity: 0; transform: translateY(12px); transition: opacity .8s ease, transform .9s cubic-bezier(.22, 1, .36, 1); }
+  .branch.is-in .owl { opacity: 1; transform: none; }
+  .closing h2 { margin: 0; font-size: clamp(36px, 5.6vw, 64px); line-height: 1.06; letter-spacing: -0.03em; }
+  .closing .lead { margin: 20px auto 0; }
+  .closing .actions { margin-top: 32px; }
+  @media (max-width: 760px) {
+    .section h2 { margin-bottom: 104px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .owl-hop, .perch .owl, .branch .owl, .owl-lid { transition: none !important; }
+  }
+
+  /* ---------- La carte s'arrête net au bas du héro ; sections suivantes opaques ---------- */
+  :root { --sec: #000000; --card-solid: #161617; }
+  #atouts, .closing, footer {
+    background: var(--sec);
+    box-shadow: 0 0 0 100vmax var(--sec); clip-path: inset(0 -100vmax);
+  }
+  .card { background: var(--card-solid); backdrop-filter: none; -webkit-backdrop-filter: none; }
+
+  /* ---------- Thème clair : suit le réglage du système ---------- */
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #FBFBFD; --ink: #1D1D1F; --muted: #515154; --faint: #6E6E73;
+      --line: rgba(0, 0, 0, 0.10); --nav: rgba(251, 251, 253, 0.80);
+      --accent: #0066CC; --accent-ink: #FFFFFF; --card: rgba(255, 255, 255, 0.78);
+      --sec: #F5F5F7; --card-solid: #FFFFFF;
+    }
+    .gnav { --fly-ink: #1D1D1F; --fly-muted: #6E6E73; }
+    .gnav-bg { background: rgba(251, 251, 253, 0.80); }
+    .gnav.is-open .gnav-bg { background: rgba(251, 251, 253, 0.98); }
+    .gnav.is-mobile-open .gnav-bg { background: #FBFBFD; }
+    .gnav-link, .gnav-icon { color: rgba(0, 0, 0, 0.8); }
+    .gnav-link:hover, .gnav-item.is-current .gnav-link, .gnav-icon:hover, .gnav-icon[aria-expanded="true"], .gnav-col a:hover { color: #000000; }
+    .gnav-cta, .m-cta { color: #FFFFFF; }
+    .gnav-cta:hover { background: #000000; }
+    .gnav-curtain { background: rgba(232, 232, 237, 0.40); }
+    .veil {
+      background:
+        radial-gradient(ellipse 50% 40% at 50% 42%, rgba(251,251,253,0.82) 0%, transparent 100%),
+        radial-gradient(ellipse 100% 80% at 50% 50%, transparent 45%, rgba(251,251,253,0.70) 100%);
+    }
+    .btn-ghost { border-color: rgba(0,0,0,0.28); background: rgba(251,251,253,0.6); }
+    .btn-ghost:hover { background: rgba(0,0,0,0.05); }
+    .card .num { color: var(--accent); }
+    .owl { --owl-ink: #1D1D1F; --owl-bg: #F5F5F7; }
+    .branch > svg path:nth-child(1) { stroke: rgba(30, 42, 66, 0.14); }
+    .branch > svg path:nth-child(2) { stroke: rgba(30, 42, 66, 0.45); }
+    .branch > svg path:nth-child(3) { stroke: rgba(30, 42, 66, 0.10); }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="waves" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+
+<header class="gnav" id="gnav">
+  <div class="gnav-bg" aria-hidden="true"></div>
+  <nav class="gnav-bar" aria-label="Navigation principale">
+    <a class="brand" href="#" aria-label="Hadrian, accueil"><svg class="brand-lockup" viewBox="-1009.6 -1145.4 5470.6 1205.2" aria-hidden="true"><path fill="currentColor" transform="translate(-1284.25 -1325.54) scale(6.7630)" d="M100.00 34.00C120.00 34.00 140.00 36.00 148.00 48.00C154.00 58.00 153.00 78.00 147.00 94.00C156.00 112.00 153.00 156.00 136.00 180.00C134.07 182.32 131.98 184.34 129.79 186.09Q141.62 173.51 145.95 152.72Q150.71 129.90 145.07 105.75Q144.82 104.68 143.75 104.93Q142.68 105.18 142.93 106.25Q148.45 129.93 143.80 152.28Q138.75 176.51 123.30 189.15Q122.88 189.50 122.84 189.88Q122.81 190.19 123.02 190.53C115.52 194.49 107.38 196.00 100.00 196.00C92.62 196.00 84.48 194.49 76.98 190.53Q77.19 190.19 77.16 189.88Q77.12 189.50 76.70 189.15Q61.25 176.51 56.20 152.28Q51.55 129.93 57.07 106.25Q57.32 105.18 56.25 104.93Q55.71 104.80 55.38 105.01Q55.05 105.21 54.93 105.75Q49.29 129.90 54.05 152.72Q58.38 173.51 70.21 186.09C68.02 184.34 65.93 182.32 64.00 180.00C47.00 156.00 44.00 112.00 53.00 94.00C47.00 78.00 46.00 58.00 52.00 48.00C60.00 36.00 80.00 34.00 100.00 34.00ZM134.50 86.00C134.50 81.76 132.54 77.97 129.49 75.50L112.51 75.50C109.46 77.97 107.50 81.76 107.50 86.00C107.50 93.46 113.54 99.50 121.00 99.50C128.46 99.50 134.50 93.46 134.50 86.00ZM92.50 86.00C92.50 81.76 90.54 77.97 87.49 75.50L70.51 75.50C67.46 77.97 65.50 81.76 65.50 86.00C65.50 93.46 71.54 99.50 79.00 99.50C86.46 99.50 92.50 93.46 92.50 86.00ZM130.10 87.00C130.10 91.75 126.25 95.60 121.50 95.60C116.75 95.60 112.90 91.75 112.90 87.00C112.90 82.25 116.75 78.40 121.50 78.40C126.25 78.40 130.10 82.25 130.10 87.00ZM87.10 87.00C87.10 91.75 83.25 95.60 78.50 95.60C73.75 95.60 69.90 91.75 69.90 87.00C69.90 82.25 73.75 78.40 78.50 78.40C83.25 78.40 87.10 82.25 87.10 87.00ZM100.00 84.00L95.80 94.00L100.00 104.00L104.20 94.00ZM96.61 71.03Q97.63 71.42 98.03 70.39Q98.42 69.37 97.39 68.97Q80.05 62.34 61.71 67.44Q60.65 67.73 60.94 68.79Q61.09 69.32 61.43 69.52Q61.76 69.71 62.29 69.56Q79.95 64.66 96.61 71.03ZM102.61 68.97Q101.58 69.37 101.97 70.39Q102.37 71.42 103.39 71.03Q120.05 64.66 137.71 69.56Q138.24 69.71 138.57 69.52Q138.91 69.32 139.06 68.79Q139.35 67.73 138.29 67.44Q119.95 62.34 102.61 68.97ZM78.00 84.00C78.00 82.90 77.10 82.00 76.00 82.00C74.90 82.00 74.00 82.90 74.00 84.00C74.00 85.10 74.90 86.00 76.00 86.00C77.10 86.00 78.00 85.10 78.00 84.00ZM126.00 84.00C126.00 82.90 125.10 82.00 124.00 82.00C122.90 82.00 122.00 82.90 122.00 84.00C122.00 85.10 122.90 86.00 124.00 86.00C125.10 86.00 126.00 85.10 126.00 84.00Z"/><path fill="currentColor" d="M42.72705078125 0.0V-38.4318603515625Q89.2724609375 -40.45458984375 112.51810709635417 -48.95458984375Q135.76375325520834 -57.45458984375 143.67716471354169 -81.45458984375Q151.590576171875 -105.45458984375 151.590576171875 -152.45458984375V-617.6287073206018Q151.590576171875 -664.54541015625 144.70222981770831 -688.04541015625Q137.81388346354166 -711.54541015625 116.65681966145833 -720.54541015625Q95.499755859375 -729.54541015625 52.954345703125 -731.5681396484375V-770.0H366.2734375V-731.54541015625Q322.77981721512 -730.54541015625 301.53874684343435 -721.04541015625Q280.29767647174873 -711.54541015625 273.21731968118684 -686.54541015625Q266.136962890625 -661.54541015625 266.136962890625 -610.54541015625V-420.36376953125H663.408935546875V-617.54541015625Q663.408935546875 -664.54541015625 656.3293823242187 -688.04541015625Q649.2498291015625 -711.54541015625 627.5054870605468 -720.54541015625Q605.7611450195312 -729.54541015625 562.2724609375 -731.54541015625V-770.0H875.81884765625V-731.5570663060897Q833.500732421875 -730.54541015625 812.6712036132812 -721.04541015625Q791.8416748046875 -711.54541015625 784.8984985351562 -686.54541015625Q777.955322265625 -661.54541015625 777.955322265625 -610.54541015625V-159.36240661499752Q777.955322265625 -108.45458984375 785.4003315587197 -82.95458984375Q792.8453408518145 -57.45458984375 816.1730366368447 -48.95458984375Q839.500732421875 -40.45458984375 886.046142578125 -38.4318603515625V0.0H552.2724609375V-38.45458984375Q599.7580455433239 -40.45458984375 623.5008378462358 -48.95458984375Q647.2436301491477 -57.45458984375 655.3262828480114 -81.45458984375Q663.408935546875 -105.45458984375 663.408935546875 -152.45458984375V-367.63623046875H266.136962890625V-159.45458984375Q266.136962890625 -108.45458984375 273.71516068484806 -82.95458984375Q281.2933584790711 -57.45458984375 305.0383782343033 -48.95458984375Q328.78339798953556 -40.45458984375 376.2734375 -38.45458984375V0.0ZM1406.045654296875 10.0Q1362.36376953125 10.0 1339.7955322265625 -17.8863525390625Q1317.227294921875 -45.772705078125 1317.227294921875 -97.0H1312.227294921875Q1285.227294921875 -47.772705078125 1239.0 -19.3863525390625Q1192.772705078125 9.0 1136.772705078125 9.0Q1094.63623046875 9.0 1064.181640625 -6.5682373046875Q1033.72705078125 -22.136474609375 1017.3406982421875 -48.9774169921875Q1000.954345703125 -75.818359375 1000.954345703125 -110.9091796875Q1000.954345703125 -158.36376953125 1037.2044677734375 -197.636474609375Q1073.45458984375 -236.9091796875 1164.772705078125 -276.45458984375L1307.863525390625 -338.772705078125V-380.0Q1307.863525390625 -441.63623046875 1283.5 -470.5679931640625Q1259.136474609375 -499.499755859375 1207.09130859375 -499.499755859375Q1175.773193359375 -499.499755859375 1161.1595458984375 -486.1588134765625Q1146.5458984375 -472.81787109375 1133.318603515625 -434.045166015625Q1123.00048828125 -407.181640625 1111.0230712890625 -396.045166015625Q1099.045654296875 -384.90869140625 1077.227294921875 -384.90869140625Q1052.318115234375 -384.90869140625 1038.7498779296875 -398.7042236328125Q1025.181640625 -412.499755859375 1025.181640625 -437.408935546875Q1025.181640625 -486.0908203125 1076.63623046875 -513.04541015625Q1128.0908203125 -540.0 1224.136474609375 -540.0Q1328.09130859375 -540.0 1371.0687255859375 -503.863525390625Q1414.046142578125 -467.72705078125 1414.046142578125 -379.4541015625V-156.590576171875Q1414.046142578125 -98.681884765625 1425.2506103515625 -73.9320068359375Q1436.455078125 -49.18212890625 1460.864013671875 -49.18212890625Q1470.409423828125 -49.18212890625 1482.77294921875 -53.3411865234375Q1495.136474609375 -57.500244140625 1502.36376953125 -69.136474609375L1516.591064453125 -44.0Q1504.36376953125 -20.772705078125 1472.818359375 -5.3863525390625Q1441.27294921875 10.0 1406.045654296875 10.0ZM1185.63671875 -58.500732421875Q1219.818359375 -58.500732421875 1247.681884765625 -79.0687255859375Q1275.54541015625 -99.63671875 1291.7044677734375 -134.5682373046875Q1307.863525390625 -169.499755859375 1307.863525390625 -210.863037109375V-293.499755859375Q1234.818359375 -264.2724609375 1191.63671875 -237.408935546875Q1148.455078125 -210.54541015625 1129.7506103515625 -184.5228271484375Q1111.046142578125 -158.500244140625 1111.046142578125 -130.63671875Q1111.046142578125 -98.227783203125 1131.90966796875 -78.3642578125Q1152.773193359375 -58.500732421875 1185.63671875 -58.500732421875ZM1854.72705078125 10.0Q1779.499755859375 10.0 1720.6134033203125 -25.272705078125Q1661.72705078125 -60.54541015625 1628.3406982421875 -122.818115234375Q1594.954345703125 -185.0908203125 1594.954345703125 -264.863525390625Q1594.954345703125 -344.0908203125 1627.954345703125 -406.318115234375Q1660.954345703125 -468.54541015625 1719.22705078125 -504.272705078125Q1777.499755859375 -540.0 1851.81787109375 -540.0Q1899.499755859375 -540.0 1939.2724609375 -524.227294921875Q1979.045166015625 -508.45458984375 2007.81787109375 -473.227294921875H2011.81787109375V-571.36328125Q2011.81787109375 -628.045166015625 2010.31787109375 -667.8406982421875Q2008.81787109375 -707.63623046875 2005.81787109375 -720.63623046875Q2001.045166015625 -742.408935546875 1977.36328125 -751.5225830078125Q1953.681396484375 -760.63623046875 1901.4541015625 -760.63623046875V-791.54541015625L2117.3642578125 -830.0V-254.136474609375Q2117.3642578125 -184.0 2118.8642578125 -140.2955322265625Q2120.3642578125 -96.591064453125 2124.3642578125 -77.136474609375Q2130.136962890625 -52.681884765625 2144.2960205078125 -44.4091796875Q2158.455078125 -36.136474609375 2203.773193359375 -36.136474609375V-1.0L2032.318115234375 10.0V-79.4541015625H2028.318115234375Q1992.772705078125 -32.408935546875 1951.13623046875 -11.2044677734375Q1909.499755859375 10.0 1854.72705078125 10.0ZM2009.81787109375 -241.045654296875V-300.90869140625Q2009.81787109375 -350.499267578125 2003.7496337890625 -378.363037109375Q1997.681396484375 -406.226806640625 1981.681396484375 -427.36328125Q1960.590576171875 -457.135986328125 1926.408935546875 -472.5223388671875Q1892.227294921875 -487.90869140625 1857.9091796875 -487.90869140625Q1789.864013671875 -487.90869140625 1753.3414306640625 -429.1588134765625Q1716.81884765625 -370.408935546875 1716.81884765625 -269.181640625Q1716.81884765625 -163.863525390625 1752.8414306640625 -101.95458984375Q1788.864013671875 -40.045654296875 1857.681884765625 -40.045654296875Q1892.227294921875 -40.045654296875 1928.408935546875 -56.6593017578125Q1964.590576171875 -73.27294921875 1983.590576171875 -103.045654296875Q1997.590576171875 -125.045654296875 2003.7042236328125 -156.3865966796875Q2009.81787109375 -187.7275390625 2009.81787109375 -241.045654296875ZM2488.1826171875 -195.27294921875V-158.0908203125Q2488.1826171875 -104.0 2493.2508544921875 -78.727294921875Q2498.319091796875 -53.45458984375 2517.0692138671875 -46.0682373046875Q2535.8193359375 -38.681884765625 2575.6376953125 -36.136474609375V0.0H2294.181640625V-36.136474609375Q2333.63623046875 -38.36376953125 2351.7498779296875 -46.36376953125Q2369.863525390625 -54.36376953125 2375.363525390625 -78.7501220703125Q2380.863525390625 -103.136474609375 2380.863525390625 -153.136474609375V-271.27294921875Q2380.863525390625 -337.9091796875 2378.5225830078125 -376.181884765625Q2376.181640625 -414.45458984375 2367.8406982421875 -432.0228271484375Q2359.499755859375 -449.591064453125 2341.3861083984375 -454.1593017578125Q2323.2724609375 -458.7275390625 2291.72705078125 -458.7275390625V-493.7275390625L2472.409423828125 -531.500244140625L2486.864013671875 -409.5458984375H2490.864013671875Q2517.864013671875 -467.954833984375 2564.954833984375 -503.9774169921875Q2612.045654296875 -540.0 2662.591064453125 -540.0Q2695.954833984375 -540.0 2715.7049560546875 -523.7044677734375Q2735.455078125 -507.408935546875 2735.455078125 -480.72705078125Q2735.455078125 -454.90869140625 2719.6595458984375 -439.4766845703125Q2703.864013671875 -424.044677734375 2674.954833984375 -424.044677734375Q2654.18212890625 -424.044677734375 2640.8411865234375 -431.3402099609375Q2627.500244140625 -438.6357421875 2617.045654296875 -445.544921875Q2606.591064453125 -452.4541015625 2594.136474609375 -452.4541015625Q2568.954833984375 -452.4541015625 2544.227783203125 -420.1134033203125Q2519.500732421875 -387.772705078125 2505.409912109375 -337.27294921875Q2497.409912109375 -308.818359375 2492.7962646484375 -271.7047119140625Q2488.1826171875 -234.591064453125 2488.1826171875 -195.27294921875ZM3004.591552734375 -540.0V-160.136474609375Q3004.591552734375 -108.681884765625 3011.2506103515625 -82.2955322265625Q3017.90966796875 -55.9091796875 3037.7370389141615 -47.01146240234375Q3057.5644098595726 -38.1137451171875 3096.227783203125 -36.136474609375V0.0H2802.863525390625V-36.07504354940878Q2843.181640625 -38.136474609375 2863.3427645596594 -47.636474609375Q2883.5038884943183 -57.136474609375 2890.3881747159094 -81.636474609375Q2897.2724609375 -106.136474609375 2897.2724609375 -153.136474609375V-280.0Q2897.2724609375 -338.0 2895.6588134765625 -376.0Q2894.045166015625 -414.0 2890.2724609375 -427.0Q2886.045166015625 -450.45458984375 2867.7724609375 -458.8409423828125Q2849.499755859375 -467.227294921875 2800.408935546875 -467.227294921875V-502.0ZM2882.318115234375 -745.1593017578125Q2882.318115234375 -772.63671875 2901.3409423828125 -791.6595458984375Q2920.36376953125 -810.682373046875 2947.8411865234375 -810.682373046875Q2975.318603515625 -810.682373046875 2994.3414306640625 -791.6595458984375Q3013.3642578125 -772.63671875 3013.3642578125 -745.1593017578125Q3013.3642578125 -717.681884765625 2994.3414306640625 -698.6590576171875Q2975.318603515625 -679.63623046875 2947.8411865234375 -679.63623046875Q2920.36376953125 -679.63623046875 2901.3409423828125 -698.6590576171875Q2882.318115234375 -717.681884765625 2882.318115234375 -745.1593017578125ZM3592.045654296875 10.0Q3548.36376953125 10.0 3525.7955322265625 -17.8863525390625Q3503.227294921875 -45.772705078125 3503.227294921875 -97.0H3498.227294921875Q3471.227294921875 -47.772705078125 3425.0 -19.3863525390625Q3378.772705078125 9.0 3322.772705078125 9.0Q3280.63623046875 9.0 3250.181640625 -6.5682373046875Q3219.72705078125 -22.136474609375 3203.3406982421875 -48.9774169921875Q3186.954345703125 -75.818359375 3186.954345703125 -110.9091796875Q3186.954345703125 -158.36376953125 3223.2044677734375 -197.636474609375Q3259.45458984375 -236.9091796875 3350.772705078125 -276.45458984375L3493.863525390625 -338.772705078125V-380.0Q3493.863525390625 -441.63623046875 3469.5 -470.5679931640625Q3445.136474609375 -499.499755859375 3393.09130859375 -499.499755859375Q3361.773193359375 -499.499755859375 3347.1595458984375 -486.1588134765625Q3332.5458984375 -472.81787109375 3319.318603515625 -434.045166015625Q3309.00048828125 -407.181640625 3297.0230712890625 -396.045166015625Q3285.045654296875 -384.90869140625 3263.227294921875 -384.90869140625Q3238.318115234375 -384.90869140625 3224.7498779296875 -398.7042236328125Q3211.181640625 -412.499755859375 3211.181640625 -437.408935546875Q3211.181640625 -486.0908203125 3262.63623046875 -513.04541015625Q3314.0908203125 -540.0 3410.136474609375 -540.0Q3514.09130859375 -540.0 3557.0687255859375 -503.863525390625Q3600.046142578125 -467.72705078125 3600.046142578125 -379.4541015625V-156.590576171875Q3600.046142578125 -98.681884765625 3611.2506103515625 -73.9320068359375Q3622.455078125 -49.18212890625 3646.864013671875 -49.18212890625Q3656.409423828125 -49.18212890625 3668.77294921875 -53.3411865234375Q3681.136474609375 -57.500244140625 3688.36376953125 -69.136474609375L3702.591064453125 -44.0Q3690.36376953125 -20.772705078125 3658.818359375 -5.3863525390625Q3627.27294921875 10.0 3592.045654296875 10.0ZM3371.63671875 -58.500732421875Q3405.818359375 -58.500732421875 3433.681884765625 -79.0687255859375Q3461.54541015625 -99.63671875 3477.7044677734375 -134.5682373046875Q3493.863525390625 -169.499755859375 3493.863525390625 -210.863037109375V-293.499755859375Q3420.818359375 -264.2724609375 3377.63671875 -237.408935546875Q3334.455078125 -210.54541015625 3315.7506103515625 -184.5228271484375Q3297.046142578125 -158.500244140625 3297.046142578125 -130.63671875Q3297.046142578125 -98.227783203125 3317.90966796875 -78.3642578125Q3338.773193359375 -58.500732421875 3371.63671875 -58.500732421875ZM3960.319091796875 -293.27294921875V-158.36376953125Q3960.319091796875 -104.36376953125 3964.9327392578125 -79.36376953125Q3969.54638671875 -54.36376953125 3987.6600341796875 -46.36376953125Q4005.773681640625 -38.36376953125 4044.228271484375 -35.36376953125V0.0H3770.181640625V-35.36376953125Q3807.63623046875 -38.36376953125 3825.863525390625 -45.86376953125Q3844.0908203125 -53.36376953125 3849.7044677734375 -77.36376953125Q3855.318115234375 -101.36376953125 3855.318115234375 -151.36376953125V-282.54541015625Q3855.318115234375 -341.54541015625 3853.7044677734375 -378.04541015625Q3852.0908203125 -414.54541015625 3849.0908203125 -427.54541015625Q3843.0908203125 -454.318115234375 3827.63623046875 -461.9317626953125Q3812.181640625 -469.54541015625 3767.72705078125 -469.54541015625V-502.0L3935.227783203125 -540.0L3947.455078125 -443.500244140625H3951.455078125Q3988.318603515625 -489.136474609375 4038.454833984375 -514.5682373046875Q4088.591064453125 -540.0 4146.227294921875 -540.0Q4196.318603515625 -540.0 4234.6595458984375 -524.4317626953125Q4273.00048828125 -508.863525390625 4295.500732421875 -479.4541015625Q4312.500732421875 -456.4541015625 4320.864501953125 -419.9541015625Q4329.228271484375 -383.4541015625 4329.228271484375 -319.4541015625V-158.36376953125Q4329.228271484375 -104.36376953125 4334.228271484375 -79.36376953125Q4339.228271484375 -54.36376953125 4356.95556640625 -46.36376953125Q4374.682861328125 -38.36376953125 4411.137451171875 -35.36376953125V0.0H4139.863525390625V-35.36376953125Q4178.318115234375 -37.36376953125 4196.04541015625 -45.36376953125Q4213.772705078125 -53.36376953125 4219.0 -77.86376953125Q4224.227294921875 -102.36376953125 4224.227294921875 -151.36376953125V-284.27294921875Q4224.227294921875 -394.772705078125 4198.3409423828125 -439.13623046875Q4172.45458984375 -483.499755859375 4109.772705078125 -483.499755859375Q4068.500244140625 -483.499755859375 4033.90966796875 -461.2498779296875Q3999.319091796875 -439.0 3979.228271484375 -400.045654296875Q3972.45556640625 -387.27294921875 3968.228271484375 -373.7501220703125Q3964.0009765625 -360.227294921875 3962.1600341796875 -341.5Q3960.319091796875 -322.772705078125 3960.319091796875 -293.27294921875Z"/></svg></a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">Bientôt</p>
+    <h1>Voir loin.</h1>
+    <p class="lead">Hadrian arrive. Encore un peu de patience.</p>
+  </section>
+
+  <section class="closing" id="hauteur">
+    <div class="closing-inner" data-clear>
+      <div class="branch" aria-hidden="true">
+        <svg viewBox="0 0 600 60" preserveAspectRatio="none">
+          <path d="M0 52 C 120 46, 200 30, 300 32 S 480 52, 600 40" stroke="rgba(190, 210, 255, 0.12)" stroke-width="1"/>
+          <path d="M0 44 C 120 38, 200 18, 300 22 S 480 46, 600 30" stroke="rgba(190, 210, 255, 0.42)" stroke-width="1.3"/>
+          <path d="M20 58 C 140 56, 220 42, 300 43 S 470 58, 580 50" stroke="rgba(190, 210, 255, 0.08)" stroke-width="1"/>
+        </svg>
+        <div class="owl" data-owl data-clear></div>
+      </div>
+      <h2>Prenez de la hauteur.</h2>
+      <p class="lead">La chouette veille. Nous revenons très vite.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner" data-clear>
+    <span>© <span id="year">2026</span> Hadrian</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // ---------- Hadrian, la chouette : regard, clignements, apparition ----------
+  (() => {
+    const BODY = "M100.00 34.00C120.00 34.00 140.00 36.00 148.00 48.00C154.00 58.00 153.00 78.00 147.00 94.00C156.00 112.00 153.00 156.00 136.00 180.00C126.00 192.00 112.00 196.00 100.00 196.00C88.00 196.00 74.00 192.00 64.00 180.00C47.00 156.00 44.00 112.00 53.00 94.00C47.00 78.00 46.00 58.00 52.00 48.00C60.00 36.00 80.00 34.00 100.00 34.00Z";
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // Géométrie de la chevêche (repère du dessin, viewBox 44 30 112 170)
+    const EYES = [79, 121], EY = 86, R = 13.5, LID = 75.5;
+    const shape = (cx, r, lid) => { const c = Math.sqrt(r * r - (EY - lid) ** 2); return `M${cx - c} ${lid}L${cx + c} ${lid}A${r} ${r} 0 1 1 ${cx - c} ${lid}Z`; };
+    const eyeShape = (cx) => shape(cx, R, LID);
+    let uid = 0;
+    function owlSVG() {
+      const id = `owl${uid++}`;
+      const wing = (s) => `M${100 + s * 44} 106C${100 + s * 51} 136 ${100 + s * 46} 172 ${100 + s * 24} 190`;
+      const eye = (cx, s) => `
+        <clipPath id="${id}c${s}"><path d="${eyeShape(cx)}"/></clipPath>
+        <g clip-path="url(#${id}c${s})">
+          <g class="owl-pupil"><circle class="p" cx="${cx + s * 0.5}" cy="${EY + 1}" r="8.6"/><circle class="h" cx="${cx + s * 3}" cy="${EY - 2}" r="2"/></g>
+        </g>
+        <path class="owl-lid is-closed" d="${shape(cx, R + 0.9, LID - 0.6)}"/>`;
+      return `<svg viewBox="44 30 112 170" aria-hidden="true" focusable="false">
+        <defs><mask id="${id}m" maskUnits="userSpaceOnUse" x="40" y="20" width="120" height="190">
+          <path d="${BODY}" fill="#fff"/>
+          <g stroke="#000" stroke-width="2.2" stroke-linecap="round" fill="none"><path d="M97 70Q80 63.5 62 68.5"/><path d="M103 70Q120 63.5 138 68.5"/></g>
+          <path d="M100 84L95.8 94L100 104L104.2 94Z" fill="#000"/>
+          <g stroke="#000" stroke-width="2.2" fill="none" stroke-linecap="round"><path d="${wing(-1)}"/><path d="${wing(1)}"/></g>
+          <path d="${eyeShape(EYES[0])}" fill="#000"/><path d="${eyeShape(EYES[1])}" fill="#000"/>
+        </mask></defs>
+        <g class="owl-hop"><g class="owl-head">
+          <path class="owl-fill" d="${BODY}" mask="url(#${id}m)"/>
+          ${eye(EYES[0], -1)}${eye(EYES[1], 1)}
+        </g></g>
+      </svg>`;
+    }
+
+    const owls = [...document.querySelectorAll("[data-owl]")].map((el) => {
+      el.innerHTML = owlSVG();
+      return { el, frame: el.closest(".perch, .branch"), head: el.querySelector(".owl-head"),
+        pupils: [...el.querySelectorAll(".owl-pupil")], lids: [...el.querySelectorAll(".owl-lid")],
+        gx: 0, gy: 0, tilt: 0, awake: false, visible: false, timer: 0 };
+    });
+
+    const setLids = (o, closed) => o.lids.forEach((l) => l.classList.toggle("is-closed", closed));
+    function blink(o) {
+      if (!o.awake) return;
+      setLids(o, true);
+      setTimeout(() => {
+        setLids(o, false);
+        if (Math.random() < 0.22) setTimeout(() => { setLids(o, true); setTimeout(() => setLids(o, false), 110); }, 170);
+      }, 120);
+    }
+    function scheduleBlink(o) {
+      clearTimeout(o.timer);
+      o.timer = setTimeout(() => { if (o.visible) blink(o); scheduleBlink(o); }, 2600 + Math.random() * 4200);
+    }
+    function wake(o) {
+      if (o.awake) return;
+      o.frame && o.frame.classList.add("is-in");
+      setTimeout(() => { o.awake = true; setLids(o, false); if (!reduce) scheduleBlink(o); }, reduce ? 0 : 750);
+    }
+
+    if (reduce) { owls.forEach((o) => { o.frame && o.frame.classList.add("is-in"); o.awake = true; setLids(o, false); }); return; }
+
+    // Apparition au premier passage, pause quand elles sortent de l'écran
+    const io = new IntersectionObserver((entries) => entries.forEach((e) => {
+      const o = owls.find((x) => x.frame === e.target);
+      if (!o) return;
+      o.visible = e.isIntersecting;
+      if (e.isIntersecting && e.intersectionRatio > 0.4) wake(o);
+      if (o.visible) loop();
+    }), { threshold: [0, 0.4, 1] });
+    owls.forEach((o) => o.frame && io.observe(o.frame));
+
+    // Le regard suit le pointeur ; sans pointeur, il se promène doucement
+    let px = null, py = null, lastMove = 0, raf = 0;
+    window.addEventListener("pointermove", (e) => { px = e.clientX; py = e.clientY; lastMove = performance.now(); loop(); }, { passive: true });
+    function loop() { if (!raf) raf = requestAnimationFrame(step); }
+    function step(now) {
+      raf = 0;
+      let active = false;
+      for (const o of owls) {
+        if (!o.visible) continue;
+        active = true;
+        const r = o.el.getBoundingClientRect();
+        const cx = r.left + ((100 - 44) / 112) * r.width, cy = r.top + ((86 - 30) / 170) * r.height;
+        let tx = 0, ty = 0, tt = 0;
+        if (px !== null && now - lastMove < 6000) {
+          const dx = px - cx, dy = py - cy, d = Math.hypot(dx, dy) || 1, k = Math.min(3.2, d / 40) / d;
+          tx = dx * k; ty = dy * k * 0.8; tt = Math.max(-7, Math.min(7, dx / 60));
+        } else {
+          const t = now / 1000 + r.left * 0.01;                     // flânerie
+          tx = Math.sin(t * 0.7) * 2.2; ty = Math.sin(t * 0.43) * 0.8; tt = Math.sin(t * 0.35) * 2;
+        }
+        o.gx += (tx - o.gx) * 0.14; o.gy += (ty - o.gy) * 0.14; o.tilt += (tt - o.tilt) * 0.08;
+        o.pupils.forEach((p) => p.setAttribute("transform", `translate(${o.gx.toFixed(2)} ${o.gy.toFixed(2)})`));
+        o.head.setAttribute("transform", `rotate(${o.tilt.toFixed(2)} 100 196)`);
+      }
+      if (active) raf = requestAnimationFrame(step);
+    }
+    // un survol la fait cligner, ravie
+    owls.forEach((o) => o.el.addEventListener("pointerenter", () => blink(o)));
+  })();
+
+  // Fond : carte topographique animée.
+  // Un relief imaginaire se déforme lentement ; on en trace les courbes de niveau,
+  // on écrit le long des courbes maîtresses des noms de lieux et des altitudes,
+  // et l'on place sur les sommets des points d'intérêt reliés entre eux.
+  (() => {
+    const canvas = document.getElementById("waves");
+    const ctx = canvas.getContext("2d");
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // ---------- Réglages ----------
+    const CELL = 12;          // finesse du maillage (px)
+    const LEVELS = 18;        // nombre de courbes de niveau
+    const MAJOR = 4;          // une courbe maîtresse toutes les MAJOR courbes
+    const SCALE = 1 / 440;    // taille des reliefs
+    const SPEED = 0.00003;    // vitesse de déformation du relief
+    const FPS = 24;           // cadence plafonnée
+    const LIFE = [9000, 15000];         // durée de vie d'une inscription (ms)
+    const POINT_LIFE = 11000;           // durée de vie d'un point (ms)
+    const POINT_EVERY = 5200;           // intervalle entre deux nouveaux points (ms)
+    const MAX_POINTS = 2;
+    // Palette des tracés : suit le thème du système, y compris s'il change en cours de visite
+    const PALETTES = {
+      dark:  { ink: "190, 210, 255", accent: "41, 151, 255", name: 0.68, sector: 0.62, title: "rgba(245, 245, 247, 0.92)", sub: 0.85, minor: 0.12 },
+      light: { ink: "30, 42, 66",    accent: "0, 102, 204",  name: 0.80, sector: 1,    title: "rgba(29, 29, 31, 0.95)",   sub: 1,    minor: 0.13 },
+    };
+    const schemeQuery = window.matchMedia("(prefers-color-scheme: light)");
+    let PAL = PALETTES.dark, INK = PAL.ink, ACCENT = PAL.accent;
+
+    const NAMES = [
+      "Crêtes", "Plateau", "Versant nord", "Versant sud", "Col",
+      "Vallée", "Promontoire", "Belvédère", "Combe", "Éperon",
+      "Terrasses", "Hauts plateaux", "Ligne de partage", "Piémont", "Gorges",
+      "Corniche", "Balcon", "Contreforts", "Lisière", "Replat",
+    ];
+    const SECTORS = [
+      "Alt. 1 240 m", "Alt. 980 m", "Alt. 1 615 m", "Alt. 720 m", "Alt. 2 030 m",
+      "Alt. 1 410 m", "Alt. 860 m", "Alt. 1 875 m",
+    ];
+    const POINTS = [
+      "Point de vue", "Sommet", "Repère", "Cairn", "Signal",
+      "Borne", "Panorama", "Point coté",
+    ];
+    // Emplacements, en fraction de l'écran, à l'écart du titre.
+    const NAME_ANCHORS = [
+      [0.10, 0.20], [0.86, 0.17], [0.07, 0.56], [0.92, 0.52], [0.20, 0.88],
+      [0.79, 0.86], [0.40, 0.16], [0.60, 0.95], [0.66, 0.13], [0.34, 0.96],
+    ];
+    const SECTOR_ANCHORS = [[0.53, 0.22], [0.14, 0.38], [0.88, 0.70], [0.47, 0.90]];
+
+    const NAME_FONT = '500 10px -apple-system, BlinkMacSystemFont, "Helvetica Neue", Inter, Arial, sans-serif';
+    const SECTOR_FONT = '500 9px ui-monospace, "SF Mono", Menlo, Consolas, monospace';
+    const STYLE = {
+      name: { font: NAME_FONT, track: 1.8, color: "" },
+      sector: { font: SECTOR_FONT, track: 1.2, color: "" },
+    };
+    function applyScheme() {
+      PAL = schemeQuery.matches ? PALETTES.light : PALETTES.dark;
+      INK = PAL.ink; ACCENT = PAL.accent;
+      STYLE.name.color = `rgba(${INK}, ${PAL.name})`;
+      STYLE.sector.color = `rgba(${ACCENT}, ${PAL.sector})`;
+    }
+    applyScheme();
+    schemeQuery.addEventListener("change", applyScheme);
+    const MAX_BEND = 0.26;    // virage maximal entre deux lettres (radians)
+
+    // ---------- Bruit de valeur 3D lissé ----------
+    const perm = new Uint8Array(512);
+    (() => {
+      const p = Array.from({ length: 256 }, (_, i) => i);
+      let seed = 1337;
+      for (let i = 255; i > 0; i--) {
+        seed = (seed * 16807) % 2147483647;
+        const j = seed % (i + 1);
+        [p[i], p[j]] = [p[j], p[i]];
+      }
+      for (let i = 0; i < 512; i++) perm[i] = p[i & 255];
+    })();
+    const fade = (t) => t * t * t * (t * (t * 6 - 15) + 10);
+    const lerp = (a, b, t) => a + (b - a) * t;
+    const hash = (x, y, z) => perm[(perm[(perm[x & 255] + y) & 255] + z) & 255] / 255;
+    function noise(x, y, z) {
+      const xi = Math.floor(x), yi = Math.floor(y), zi = Math.floor(z);
+      const u = fade(x - xi), v = fade(y - yi), w = fade(z - zi);
+      const c = (dx, dy, dz) => hash(xi + dx, yi + dy, zi + dz);
+      return lerp(
+        lerp(lerp(c(0,0,0), c(1,0,0), u), lerp(c(0,1,0), c(1,1,0), u), v),
+        lerp(lerp(c(0,0,1), c(1,0,1), u), lerp(c(0,1,1), c(1,1,1), u), v), w);
+    }
+    const R1 = [Math.cos(0.52), Math.sin(0.52)], R2 = [Math.cos(-1.1), Math.sin(-1.1)];
+    const field = (x, y, t) => {
+      const x1 = (x * R1[0] - y * R1[1]) * SCALE, y1 = (x * R1[1] + y * R1[0]) * SCALE;
+      const x2 = (x * R2[0] - y * R2[1]) * SCALE * 2.1 + 31, y2 = (x * R2[1] + y * R2[0]) * SCALE * 2.1 + 17;
+      return noise(x1, y1, t) * 0.72 + noise(x2, y2, t * 1.6) * 0.28;
+    };
+
+    // ---------- État ----------
+    let w = 0, h = 0, dpr = 1, raf = 0, last = 0, t0 = performance.now();
+    let cols = 0, rows = 0, grid = new Float32Array(0), gmin = 0, gmax = 1;
+    let mobile = false, labels = [], points = [], links = [], lastSpawn = -Infinity;
+    const rand = (a, b) => a + Math.random() * (b - a);
+
+    // Bloc de texte du héros, mesuré dans la page : aucune inscription ne s'y pose.
+    let heroBox = null;
+    function measureHero() {
+      const el = document.querySelector(".hero");
+      if (!el) return;
+      const oy = canvas.getBoundingClientRect().top;   // repère du canevas, qui défile avec la page
+      const r = [...el.children].map((c) => { const b = c.getBoundingClientRect(); return { left: b.left, right: b.right, top: b.top - oy, bottom: b.bottom - oy }; });
+      // sur mobile, le texte occupe toute la largeur : on protège la bande entière, avec une marge plus généreuse
+      const pad = mobile ? 64 : 28;
+      heroBox = [mobile ? -1 : Math.min(...r.map((b) => b.left)) - pad, Math.min(...r.map((b) => b.top)) - pad,
+                 mobile ? w + 1 : Math.max(...r.map((b) => b.right)) + pad, Math.max(...r.map((b) => b.bottom)) + pad];
+      // autres blocs de texte à garder dégagés (titres, cartes, section de clôture)
+      clearBoxes = [...document.querySelectorAll("[data-clear]")].map((n) => { const b = n.getBoundingClientRect(); return { left: b.left, right: b.right, top: b.top - oy, bottom: b.bottom - oy }; })
+        .filter((b) => b.bottom > -40 && b.top < h + 40).map((b) => [b.left - 20, b.top - 20, b.right + 20, b.bottom + 20]);
+    }
+    let clearBoxes = [], ticks = 0;
+    const inBox = (b, x, y) => x > b[0] && x < b[2] && y > b[1] && y < b[3];
+    const inHero = (x, y) => (heroBox && inBox(heroBox, x, y)) || clearBoxes.some((b) => inBox(b, x, y));
+    window.addEventListener("scroll", measureHero, { passive: true });
+
+    const hero = document.querySelector(".hero");
+    function syncHeight() { document.documentElement.style.setProperty("--hero-h", hero.offsetHeight + "px"); }
+    function resize() {
+      syncHeight();
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = canvas.clientWidth; h = canvas.clientHeight;
+      canvas.width = Math.round(w * dpr); canvas.height = Math.round(h * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      cols = Math.ceil(w / CELL) + 3; rows = Math.ceil(h / CELL) + 3;
+      grid = new Float32Array(cols * rows);
+      mobile = w < 760;
+      const now = performance.now();
+      const names = mobile ? [NAME_ANCHORS[0], NAME_ANCHORS[1], NAME_ANCHORS[4], NAME_ANCHORS[5]] : NAME_ANCHORS;
+      const sectors = mobile ? [[0.5, 0.2], [0.5, 0.9]] : SECTOR_ANCHORS;
+      labels = [
+        ...names.map(([fx, fy]) => ({ kind: "name", fx, fy })),
+        ...sectors.map(([fx, fy]) => ({ kind: "sector", fx, fy })),
+      ].map((l, i) => ({ ...l, text: "", widths: null, total: 0, state: "search", alpha: 0,
+        born: now, life: rand(...LIFE), delay: now + i * 650, spot: null, dir: 0, x: 0, y: 0, ax: 0, ay: 0 }));
+      points = []; links = []; lastSpawn = -Infinity;
+    }
+
+    // ---------- Relief et courbes ----------
+    function sample(t) {
+      gmin = Infinity; gmax = -Infinity;
+      for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) {
+        const v = field((i - 1) * CELL, (j - 1) * CELL, t);
+        grid[j * cols + i] = v;
+        if (v < gmin) gmin = v;
+        if (v > gmax) gmax = v;
+      }
+    }
+    function contour(iso) {
+      const segs = [];
+      for (let j = 0; j < rows - 1; j++) for (let i = 0; i < cols - 1; i++) {
+        const a = grid[j * cols + i], b = grid[j * cols + i + 1];
+        const c = grid[(j + 1) * cols + i + 1], d = grid[(j + 1) * cols + i];
+        const idx = (a > iso ? 8 : 0) | (b > iso ? 4 : 0) | (c > iso ? 2 : 0) | (d > iso ? 1 : 0);
+        if (idx === 0 || idx === 15) continue;
+        const x = (i - 1) * CELL, y = (j - 1) * CELL;
+        const T = [x + CELL * (iso - a) / (b - a), y], R = [x + CELL, y + CELL * (iso - b) / (c - b)];
+        const B = [x + CELL * (iso - d) / (c - d), y + CELL], L = [x, y + CELL * (iso - a) / (d - a)];
+        const s = (p, q) => segs.push(p[0], p[1], q[0], q[1]);
+        switch (idx) {
+          case 1: case 14: s(L, B); break;
+          case 2: case 13: s(B, R); break;
+          case 3: case 12: s(L, R); break;
+          case 4: case 11: s(T, R); break;
+          case 6: case 9: s(T, B); break;
+          case 7: case 8: s(L, T); break;
+          case 5: s(L, T); s(B, R); break;
+          case 10: s(T, R); s(L, B); break;
+        }
+      }
+      return segs;
+    }
+    function chaikin(p, closed) {
+      const out = closed ? [] : [p[0]];
+      for (let i = 0; i < p.length - 1; i++) {
+        const [x0, y0] = p[i], [x1, y1] = p[i + 1];
+        out.push([0.75 * x0 + 0.25 * x1, 0.75 * y0 + 0.25 * y1], [0.25 * x0 + 0.75 * x1, 0.25 * y0 + 0.75 * y1]);
+      }
+      out.push(closed ? out[0] : p[p.length - 1]);
+      return out;
+    }
+    // Recolle les segments en lignes continues, puis les lisse : le tracé affiché
+    // et le tracé sur lequel s'écrivent les lettres sont exactement les mêmes.
+    function polylines(segs) {
+      const key = (x, y) => Math.round(x * 64) * 100003 + Math.round(y * 64);
+      const n = segs.length / 4, ends = new Map(), used = new Uint8Array(n);
+      for (let k = 0; k < n; k++) for (const e of [0, 2]) {
+        const kk = key(segs[k * 4 + e], segs[k * 4 + e + 1]);
+        let arr = ends.get(kk); if (!arr) ends.set(kk, (arr = []));
+        arr.push(k);
+      }
+      const other = (k, x, y) => key(segs[k * 4], segs[k * 4 + 1]) === key(x, y)
+        ? [segs[k * 4 + 2], segs[k * 4 + 3]] : [segs[k * 4], segs[k * 4 + 1]];
+      const extend = (pts) => {
+        for (;;) {
+          const [x, y] = pts[pts.length - 1];
+          const next = (ends.get(key(x, y)) || []).find((k) => !used[k]);
+          if (next === undefined) return;
+          used[next] = 1; pts.push(other(next, x, y));
+        }
+      };
+      const lines = [];
+      for (let k = 0; k < n; k++) {
+        if (used[k]) continue;
+        used[k] = 1;
+        const fwd = [[segs[k * 4], segs[k * 4 + 1]], [segs[k * 4 + 2], segs[k * 4 + 3]]];
+        extend(fwd);
+        const back = [fwd[0]];
+        extend(back);
+        let pts = back.reverse().concat(fwd.slice(1));
+        if (pts.length < 3) continue;
+        const f = pts[0], l = pts[pts.length - 1];
+        const closed = Math.hypot(f[0] - l[0], f[1] - l[1]) < 0.01;
+        pts = chaikin(chaikin(chaikin(pts, closed), closed), closed);
+        const cum = [0];
+        for (let i = 1; i < pts.length; i++) cum.push(cum[i - 1] + Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]));
+        lines.push({ pts, cum, len: cum[cum.length - 1] });
+      }
+      return lines;
+    }
+    function at(line, s) {
+      const { pts, cum } = line;
+      s = Math.max(0, Math.min(line.len, s));
+      let lo = 0, hi = cum.length - 1;
+      while (hi - lo > 1) { const mid = (lo + hi) >> 1; cum[mid] <= s ? (lo = mid) : (hi = mid); }
+      const span = cum[hi] - cum[lo] || 1, f = (s - cum[lo]) / span;
+      const [x0, y0] = pts[lo], [x1, y1] = pts[hi];
+      return [x0 + (x1 - x0) * f, y0 + (y1 - y0) * f];
+    }
+    function tangent(line, s, half = 4) {
+      const a = at(line, s - half), b = at(line, s + half);
+      return Math.atan2(b[1] - a[1], b[0] - a[0]);
+    }
+    function project(line, px, py) {
+      const { pts, cum } = line;
+      let best = Infinity, bs = 0;
+      for (let i = 0; i < pts.length - 1; i++) {
+        const [x0, y0] = pts[i], [x1, y1] = pts[i + 1];
+        const dx = x1 - x0, dy = y1 - y0, l2 = dx * dx + dy * dy || 1;
+        const f = Math.max(0, Math.min(1, ((px - x0) * dx + (py - y0) * dy) / l2));
+        const d = (x0 + dx * f - px) ** 2 + (y0 + dy * f - py) ** 2;
+        if (d < best) { best = d; bs = cum[i] + f * (cum[i + 1] - cum[i]); }
+      }
+      return [bs, Math.sqrt(best)];
+    }
+
+    // ---------- Inscriptions le long des courbes ----------
+
+    function measure(lb) {
+      ctx.font = STYLE[lb.kind].font;
+      if ("letterSpacing" in ctx) ctx.letterSpacing = "0px";
+      lb.widths = [...lb.text].map((ch) => ctx.measureText(ch).width);
+      lb.total = lb.widths.reduce((a, b) => a + b, 0) + STYLE[lb.kind].track * (lb.widths.length - 1);
+    }
+    function pickName(lb) {
+      const shown = new Set(labels.map((l) => l.text));
+      const pool = lb.kind === "name" ? NAMES : SECTORS;
+      const free = pool.map((t) => t.toUpperCase()).filter((t) => !shown.has(t));
+      lb.text = free[Math.floor(Math.random() * free.length)];
+      measure(lb);
+    }
+    function reAnchor(lb) {
+      // l'emplacement varie un peu à chaque renaissance
+      lb.ax = Math.max(80, Math.min(w - 80, lb.fx * w + rand(-50, 50)));
+      lb.ay = Math.max(110, Math.min(h - 60, lb.fy * h + rand(-40, 40)));
+    }
+    // Toute l'étendue du mot reste hors du titre, loin des bords et des autres inscriptions.
+    function clear(line, s, L, self) {
+      for (let k = 0; k <= 8; k++) {
+        const [x, y] = at(line, s - L / 2 - 6 + ((L + 12) * k) / 8);
+        if (x < 36 || x > w - 36 || y < 44 + 30 || y > h - 28 || inHero(x, y)) return false;
+        for (const p of points) {
+          if (Math.hypot(x - p.x, y - p.y) < 46) return false;
+          const b = p.box;
+          if (b && x > b[0] - 12 && x < b[2] + 12 && y > b[1] - 12 && y < b[3] + 12) return false;
+        }
+        for (const o of labels) {
+          if (o === self || !o.glyphs || o.alpha < 0.02) continue;
+          for (const [gx, gy] of o.glyphs) if (Math.abs(gx - x) < 18 && Math.abs(gy - y) < 18) return false;
+        }
+      }
+      return true;
+    }
+    function smooth(line, s, L) {
+      if (s - L / 2 - 10 < 0 || s + L / 2 + 10 > line.len) return false;
+      let prev = tangent(line, s - L / 2), turn = 0;
+      for (let k = 1; k <= 10; k++) {
+        const a = tangent(line, s - L / 2 + (L * k) / 10);
+        const da = Math.atan2(Math.sin(a - prev), Math.cos(a - prev));
+        turn += da; prev = a;
+        if (Math.abs(da) > MAX_BEND || Math.abs(turn) > 0.9) return false;
+      }
+      return true;
+    }
+
+    function updateLabels(lines, now, instant) {
+      for (const lb of labels) {
+        if (!lb.text) { pickName(lb); reAnchor(lb); }
+        if (lb.state === "out" && lb.alpha <= 0.01) {
+          pickName(lb);
+          reAnchor(lb);
+          Object.assign(lb, { state: "search", spot: null, glyphs: null, dir: 0, quick: false });
+        }
+        if (lb.state === "search") {
+          if (now < lb.delay && !instant) continue;
+          const L = lb.total;
+          let best = null, bestD = 110;
+          for (const line of lines) {
+            if (line.len < L + 40) continue;
+            for (let s = L / 2 + 12; s < line.len - L / 2 - 12; s += 6) {
+              const [cx, cy] = at(line, s);
+              const d = Math.hypot(cx - lb.ax, cy - lb.ay);
+              if (d >= bestD) continue;
+              if (smooth(line, s, L) && clear(line, s, L, lb)) { bestD = d; best = { line, s }; }
+            }
+          }
+          if (best) {
+            lb.spot = best; [lb.x, lb.y] = at(best.line, best.s);
+            Object.assign(lb, { state: "in", born: now, life: rand(...LIFE) });
+          } else continue;
+        } else {
+          // Rester accroché : projection continue du point de l'image précédente sur la courbe actuelle.
+          const L = lb.total;
+          let spot = null, bestD = 18;
+          for (const line of lines) {
+            if (line.len < L + 40) continue;
+            const [ps, d] = project(line, lb.x, lb.y);
+            if (d < bestD && smooth(line, ps, L) && clear(line, ps, L, lb)) { bestD = d; spot = { line, s: ps }; }
+          }
+          if (spot) { lb.spot = spot; [lb.x, lb.y] = at(spot.line, spot.s); }
+          else if (lb.state !== "out") Object.assign(lb, { state: "out", quick: true });
+          if (lb.state !== "out" && now - lb.born > lb.life && !instant) lb.state = "out";
+        }
+        lb.alpha = instant ? 1 : lb.state === "out"
+          ? Math.max(0, lb.alpha - (lb.quick ? 0.12 : 0.025)) : Math.min(1, lb.alpha + 0.025);
+        if (lb.state === "in" && lb.alpha >= 1) lb.state = "hold";
+        if (lb.quick && lb.state === "out") continue;   // courbe perdue : on s'efface sans bouger
+
+        // Lettres posées exactement sur la courbe, chacune selon la pente locale.
+        const L = lb.total, { line, s } = lb.spot, tr = STYLE[lb.kind].track;
+        const p0 = at(line, s - L / 2), p1 = at(line, s + L / 2), dx = p1[0] - p0[0];
+        if (!lb.dir) lb.dir = dx >= 0 ? 1 : -1;
+        else if (dx * lb.dir < -0.35 * L) lb.dir = -lb.dir;   // sens de lecture : de gauche à droite
+        const dir = lb.dir, s0 = s - (dir * L) / 2;
+        const g = []; let off = 0;
+        lb.widths.forEach((wch) => {
+          const ss = s0 + dir * (off + wch / 2), [x, y] = at(line, ss);
+          g.push([x, y, tangent(line, ss) + (dir === 1 ? 0 : Math.PI)]);
+          off += wch + tr;
+        });
+        lb.glyphs = g;
+        lb.path = [];
+        for (let k = 0; k <= 16; k++) lb.path.push(at(line, s - L / 2 - 5 + ((L + 10) * k) / 16));
+      }
+    }
+    function drawLabels() {
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      if ("letterSpacing" in ctx) ctx.letterSpacing = "0px";
+      for (const lb of labels) {
+        if (!lb.glyphs || lb.alpha <= 0.01) continue;
+        const st = STYLE[lb.kind];
+        ctx.globalAlpha = lb.alpha;
+        // la courbe s'interrompt sous le mot, en suivant exactement son tracé
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.lineWidth = lb.kind === "name" ? 13 : 12; ctx.lineCap = "round"; ctx.lineJoin = "round";
+        ctx.beginPath();
+        lb.path.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
+        ctx.stroke();
+        ctx.globalCompositeOperation = "source-over";
+        ctx.font = st.font; ctx.fillStyle = st.color;
+        [...lb.text].forEach((ch, i) => {
+          const [x, y, a] = lb.glyphs[i];
+          ctx.save(); ctx.translate(x, y); ctx.rotate(a); ctx.fillText(ch, 0, 0.5); ctx.restore();
+        });
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    // ---------- Points d'intérêt sur les sommets ----------
+    function summits() {
+      const out = [], thr = gmin + (gmax - gmin) * 0.5, r = 4;
+      for (let j = r; j < rows - r; j++) for (let i = r; i < cols - r; i++) {
+        const v = grid[j * cols + i];
+        if (v < thr) continue;
+        let top = true;
+        for (let dj = -r; dj <= r && top; dj++) for (let di = -r; di <= r; di++) {
+          if ((di || dj) && grid[(j + dj) * cols + i + di] >= v) { top = false; break; }
+        }
+        if (!top) continue;
+        // affinage sous-maille : le point se pose exactement au sommet
+        const l = grid[j * cols + i - 1], rr = grid[j * cols + i + 1];
+        const u = grid[(j - 1) * cols + i], d = grid[(j + 1) * cols + i];
+        const ox = (l - rr) / (2 * (l - 2 * v + rr) || 1), oy = (u - d) / (2 * (u - 2 * v + d) || 1);
+        out.push([(i - 1 + ox) * CELL, (j - 1 + oy) * CELL]);
+      }
+      return out;
+    }
+    // Centres des petites courbes fermées : mamelons et cuvettes.
+    function loopCentres(majors) {
+      const out = [];
+      for (const { pts, len } of majors) {
+        const f = pts[0], l = pts[pts.length - 1];
+        if (len > 520 || len < 60 || Math.hypot(f[0] - l[0], f[1] - l[1]) > 0.5) continue;
+        let cx = 0, cy = 0;
+        for (const [x, y] of pts) { cx += x; cy += y; }
+        out.push([cx / pts.length, cy / pts.length]);
+      }
+      return out;
+    }
+
+    const TITLE_FONT = '600 10px -apple-system, BlinkMacSystemFont, "Helvetica Neue", Inter, Arial, sans-serif';
+    const SUB_FONT = '500 9px ui-monospace, "SF Mono", Menlo, Consolas, monospace';
+    const setFont = (f, sp) => { ctx.font = f; if ("letterSpacing" in ctx) ctx.letterSpacing = sp; };
+    // Mise en page de l'étiquette d'un point (coordonnées relatives au point).
+    function tagLayout(x, title, sub) {
+      setFont(TITLE_FONT, "1.4px"); const tw = ctx.measureText(title).width;
+      setFont(SUB_FONT, "0.8px"); const sw = ctx.measureText(sub).width;
+      const bw = Math.max(tw, sw) + 12, r = 8;
+      if (mobile) {
+        const cx = Math.max(10 + bw / 2 - x, Math.min(w - 10 - bw / 2 - x, 0));
+        return { bw, align: "center", tx: cx, ty1: r + 22, ty2: r + 34, bx: cx - bw / 2, by: r + 11,
+                 leader: [[0, r + 2], [0, r + 9]] };
+      }
+      const side = x + 210 > w ? -1 : 1;
+      const lx = side * (r + 9), ly = -(r + 9), hx = lx + side * 18;
+      return { bw, align: side === 1 ? "left" : "right", tx: side === 1 ? hx + 8 : hx - 8, ty1: ly + 3, ty2: ly + 15,
+               bx: side === 1 ? hx + 4 : hx - 4 - bw, by: ly - 13, leader: [[side * r * 0.72, -r * 0.72], [lx, ly], [hx, ly]] };
+    }
+    function tagFits(x, y, title, sub) {
+      const L = tagLayout(x, title, sub);
+      const b = [x + L.bx - 4, y + L.by - 4, x + L.bx + L.bw + 4, y + L.by + 34];
+      if (b[0] < 6 || b[2] > w - 6 || b[1] < 50 || b[3] > h - 30) return false;
+      for (const c of heroBox ? [heroBox, ...clearBoxes] : clearBoxes) if (!(b[2] < c[0] || b[0] > c[2] || b[3] < c[1] || b[1] > c[3])) return false;
+      return true;
+    }
+    const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+    function updatePoints(now, instant, majors) {
+      const tops = summits().concat(loopCentres(majors));
+      for (const p of points) {
+        let best = null, bd = 60;
+        for (const [x, y] of tops) { const d = Math.hypot(x - p.x, y - p.y); if (d < bd) { bd = d; best = [x, y]; } }
+        // le point suit son sommet en douceur ; si le sommet s'efface, il reste en place
+        if (best) { p.x += (best[0] - p.x) * 0.06; p.y += (best[1] - p.y) * 0.06; }
+        if (!p.dying && !instant && (now - p.born > POINT_LIFE || !tagFits(p.x, p.y, p.title, p.sub))) { p.dying = true; p.deathAt = now; }
+      }
+      points = points.filter((p) => !p.dying || now - p.deathAt < 1200);
+      links = links.filter((k) => points.includes(k.a) && points.includes(k.b));
+
+      const alive = points.filter((p) => !p.dying);
+      const ending = alive.filter((p) => now - p.born > POINT_LIFE - 4500).length;
+      const want = instant ? alive.length < MAX_POINTS
+        : alive.length - ending < MAX_POINTS && alive.length <= MAX_POINTS
+          && (now - lastSpawn > POINT_EVERY || alive.length - ending === 0);
+      if (!want) return;
+      const free = ([x, y], m, gap, lab) => x > m && x < w - m && y > 44 + m && y < h - m * 0.6 && !inHero(x, y)
+        && alive.every((p) => Math.hypot(p.x - x, p.y - y) > gap)
+        && labels.every((lb) => !lb.glyphs || lb.alpha < 0.05 || lb.glyphs.every(([gx, gy]) => Math.hypot(gx - x, gy - y) > lab));
+      const m = mobile ? 46 : 110;
+      let ok = tops.filter((p) => free(p, m, mobile ? 180 : 320, 90));
+      if (!ok.length) ok = tops.filter((p) => free(p, m * 0.75, mobile ? 140 : 200, 55));
+      if (!ok.length && (mobile || !alive.length)) ok = tops.filter((p) => free(p, 40, 140, 50));
+      if (!ok.length && mobile) {
+        const flanks = [];
+        for (const ln of majors) for (let d = 30; d < ln.len - 30; d += 60) flanks.push(at(ln, d));
+        ok = flanks.filter((p) => free(p, 40, 140, 50) && p[1] > 110 && p[1] < h - 90);
+      }
+      const used = new Set(points.map((p) => p.title));
+      const title = pick(POINTS.map((t) => t.toUpperCase()).filter((t) => !used.has(t)));
+      const sub = pick(SECTORS).toUpperCase();
+      ok = ok.filter(([x, y]) => tagFits(x, y, title, sub));
+      if (!ok.length) return;
+      // couvrir le terrain : on privilégie les sommets éloignés des points en place
+      const far = (q) => Math.min(Infinity, ...alive.map((p) => Math.hypot(p.x - q[0], p.y - q[1])));
+      ok.sort((a, b) => far(b) - far(a));
+      const [x, y] = ok[Math.floor(Math.random() * Math.min(3, ok.length))];
+      const pt = { x, y, title, sub, born: instant ? now - 2000 : now, dying: false, deathAt: 0, box: null };
+      if (alive.length) links.push({ a: alive[alive.length - 1], b: pt, born: instant ? now - 5000 : now });
+      points.push(pt); lastSpawn = now;
+    }
+
+    const easeOut = (t) => 1 - Math.pow(1 - Math.min(1, Math.max(0, t)), 3);
+    function linkBlocked(x, y) {
+      if (inHero(x, y)) return true;
+      for (const p of points) { const b = p.box; if (b && x > b[0] - 6 && x < b[2] + 6 && y > b[1] - 6 && y < b[3] + 6) return true; }
+      for (const lb of labels) {
+        if (!lb.glyphs || lb.alpha < 0.05) continue;
+        for (const [gx, gy] of lb.glyphs) if (Math.abs(gx - x) < 11 && Math.abs(gy - y) < 11) return true;
+      }
+      return false;
+    }
+    function drawPoints(now) {
+      // liaisons : arc en pointillés, tracé progressivement, levé au passage des textes
+      for (const k of links) {
+        const prog = easeOut((now - k.born) / 2400);
+        const fa = k.a.dying ? 1 - (now - k.a.deathAt) / 1200 : 1, fb = k.b.dying ? 1 - (now - k.b.deathAt) / 1200 : 1;
+        const alpha = 0.45 * Math.max(0, Math.min(fa, fb));
+        if (alpha <= 0) continue;
+        const { x: x0, y: y0 } = k.a, { x: x1, y: y1 } = k.b;
+        const len = Math.hypot(x1 - x0, y1 - y0) || 1;
+        const cx = (x0 + x1) / 2 - ((y1 - y0) / len) * len * 0.18, cy = (y0 + y1) / 2 + ((x1 - x0) / len) * len * 0.18;
+        ctx.save();
+        ctx.strokeStyle = `rgba(${ACCENT}, ${alpha})`;
+        ctx.lineWidth = 1; ctx.setLineDash([2, 5]); ctx.lineCap = "round";
+        ctx.beginPath();
+        const N = 72, upto = Math.max(1, Math.round(N * prog));
+        for (let i = 0; i <= upto; i++) {
+          const t = i / N, u = 1 - t;
+          const x = u * u * x0 + 2 * u * t * cx + t * t * x1, y = u * u * y0 + 2 * u * t * cy + t * t * y1;
+          if (Math.hypot(x - x0, y - y0) < 16 || Math.hypot(x - x1, y - y1) < 16 || linkBlocked(x, y)) { ctx.moveTo(x, y); continue; }
+          ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+        ctx.restore();
+      }
+      for (const p of points) {
+        const age = now - p.born, appear = easeOut(age / 1400);
+        const alpha = p.dying ? Math.max(0, 1 - (now - p.deathAt) / 1200) : appear;
+        if (alpha <= 0) continue;
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.globalAlpha = alpha;
+        // les courbes s'écartent autour du point
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.beginPath(); ctx.arc(0, 0, 13, 0, Math.PI * 2); ctx.fill();
+        ctx.globalCompositeOperation = "source-over";
+        // halo qui respire lentement
+        const breath = 0.5 + 0.5 * Math.sin((age / 3200) * Math.PI * 2);
+        ctx.fillStyle = `rgba(${ACCENT}, ${0.10 + 0.08 * breath})`;
+        ctx.beginPath(); ctx.arc(0, 0, 8 + 2.5 * breath, 0, Math.PI * 2); ctx.fill();
+        // point cerclé
+        ctx.strokeStyle = `rgba(${ACCENT}, 0.9)`; ctx.lineWidth = 1.2;
+        ctx.beginPath(); ctx.arc(0, 0, 5.5 * appear + 1, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = `rgba(${ACCENT}, 1)`;
+        ctx.beginPath(); ctx.arc(0, 0, 2.6, 0, Math.PI * 2); ctx.fill();
+        // étiquette
+        const { bw, align, tx, ty1, ty2, bx, by, leader } = tagLayout(p.x, p.title, p.sub);
+        ctx.strokeStyle = `rgba(${INK}, 0.45)`; ctx.lineWidth = 1;
+        ctx.beginPath();
+        leader.forEach(([lx, ly], i) => (i ? ctx.lineTo(lx, ly) : ctx.moveTo(lx, ly)));
+        ctx.stroke();
+        p.box = [p.x + bx - 2, p.y + by, p.x + bx + bw + 2, p.y + by + 30];
+        ctx.globalCompositeOperation = "destination-out";
+        ctx.fillRect(bx - 2, by, bw + 4, 30);
+        ctx.globalCompositeOperation = "source-over";
+        ctx.textAlign = align; ctx.textBaseline = "alphabetic";
+        setFont(TITLE_FONT, "1.4px");
+        ctx.fillStyle = PAL.title;
+        ctx.fillText(p.title, tx, ty1);
+        setFont(SUB_FONT, "0.8px");
+        ctx.fillStyle = `rgba(${ACCENT}, ${PAL.sub})`;
+        ctx.fillText(p.sub, tx, ty2);
+        ctx.restore();
+      }
+      if ("letterSpacing" in ctx) ctx.letterSpacing = "0px";
+    }
+
+    // ---------- Image ----------
+    function draw(t, now, instant = false) {
+      ctx.clearRect(0, 0, w, h);
+      sample(t);
+      let majors = [];
+      ctx.lineJoin = "round"; ctx.lineCap = "round";
+      for (let l = 1; l <= LEVELS; l++) {
+        const iso = gmin + (gmax - gmin) * (l / (LEVELS + 1));
+        const major = l % MAJOR === 0;
+        const lines = polylines(contour(iso));
+        ctx.strokeStyle = major ? `rgba(${INK}, 0.30)` : `rgba(${INK}, ${PAL.minor})`;
+        ctx.lineWidth = major ? 1.15 : 0.8;
+        ctx.beginPath();
+        for (const { pts } of lines) {
+          ctx.moveTo(pts[0][0], pts[0][1]);
+          for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+        }
+        ctx.stroke();
+        if (major) majors = majors.concat(lines);
+      }
+      updateLabels(majors, now, instant);
+      drawLabels();
+      updatePoints(now, instant, majors);
+      drawPoints(now);
+    }
+
+    function frame(now) {
+      raf = requestAnimationFrame(frame);
+      if (now - last < 1000 / FPS) return;
+      last = now;
+      if (window.scrollY > h) return;          // héro hors champ : on ne dessine pas
+      if (++ticks % 12 === 0) measureHero();   // les blocs protégés peuvent bouger (apparitions, animations)
+      draw((now - t0) * SPEED, now);
+    }
+    function start() { if (!raf) { last = 0; raf = requestAnimationFrame(frame); } }
+    function stop() { cancelAnimationFrame(raf); raf = 0; }
+
+    resize(); measureHero();
+    // sur mobile, la barre d'adresse provoque des « resize » en défilant : on ne recompose que si la taille change vraiment
+    window.addEventListener("resize", () => {
+      syncHeight();
+      if (canvas.clientWidth === w && Math.abs(canvas.clientHeight - h) < 2) return;
+      resize(); measureHero(); if (reduce) draw(0, performance.now(), true);
+    });
+    if (reduce) { draw(0, performance.now(), true); return; }
+    document.addEventListener("visibilitychange", () => (document.hidden ? stop() : start()));
+    start();
+  })();
+</script>
+</body>
+</html>
